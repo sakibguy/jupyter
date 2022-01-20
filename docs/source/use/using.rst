@@ -1,31 +1,8 @@
-===================
-Using Jupyter Tools
-===================
+=====
+Usage
+=====
 
-Information relevant to using the various tools in the Jupyter
-ecosystem.
-
-.. TODO: this is hidden because there's a bug in the pydata theme that won't render TOC items under headers
-
-.. toctree::
-   :hidden:
-
-   use-cases/content-user
-   ../install
-   jupyter-command
-   jupyter-directories
-   config
-   advanced/content-advanced
-
-
-Installation
-============
-
-.. toctree::
-   :maxdepth: 2
-
-   /install
-
+Information relevant to using the various tools in the Jupyter ecosystem.
 
 Use and Configure
 =================
@@ -113,7 +90,7 @@ that helps lay out some of your options.
 			label="Install a\nlanguage\nkernel",
 			tooltip="How to install kernels",
 			target="_top", color=green, // Local Link
-			href="../projects/subprojects.html?highlight=jupyterhub#kernels"]
+			href="../projects/kernels.html]
 		// Path labels
 		noinst [
 			shape=plaintext,
@@ -137,12 +114,12 @@ that helps lay out some of your options.
 			label="Extensions",
 			tooltip="Install & use extensions",
 			target="_blank", color=blue, // External Link
-			href="https://github.com/ipython-contrib/IPython-notebook-extensions"]
+			href="https://github.com/ipython-contrib/jupyter_contrib_nbextensions"]
 		dash [
 			label="Dashboards",
 			tooltip="Install & use dashboards",
 			target="_blank", color=blue, // External Link
-			href="https://github.com/jupyter/dashboards"]
+			href="https://github.com/voila-dashboards/voila"]
 		help [
 			label="Help",
 			tooltip="Ask on jupyter help",

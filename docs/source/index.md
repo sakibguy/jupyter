@@ -1,16 +1,16 @@
 # Jupyter Project Documentation
 
-**Welcome to the Jupyter Project documentation**. This website acts as "meta" documentation
-for the Jupyter ecosystem. It has a collection of resources to navigate the tools
-and communities in this ecosystem, and to help you get started.
-
+**Welcome to the Jupyter Project documentation**. This website acts as "meta" documentation for the Jupyter ecosystem.
+It has a collection of resources to navigate the tools and communities in this ecosystem, and to help you get started.
 
 ## Start Here
+
+These are a few high-level topics to help you learn more about the Jupyter community and ecosystem.
 
 ```{list-table}
 :class: front_page_table
 
-* - {doc}`Get started with Jupyter Notebook <content-quickstart>`
+* - {doc}`Get started with Jupyter Notebook <start/index>`
 
       Try the notebook
 
@@ -53,86 +53,92 @@ and communities in this ecosystem, and to help you get started.
 
 ## Sub-project documentation
 
+Sub-projects are major technical and community efforts, and generally have their own documentation for their communities.
+Below is a list of documentation for major parts of the Jupyter ecosystem.
+
 ```{panels}
-Jupyter User Interfaces
+User Interfaces
 ^^^^^^
-* [Jupyter Notebook](http://jupyter-notebook.readthedocs.io/en/latest/)
-* [Jupyter console](http://jupyter_console.readthedocs.io/en/latest)
+* [JupyterLab](https://github.com/jupyterlab/jupyterlab)
+* [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/)
+* [nbclassic](https://github.com/jupyterlab/nbclassic)
+* [Jupyter Console](https://jupyter_console.readthedocs.io/en/latest)
 * [Qt console](https://qtconsole.readthedocs.io/en/stable)
+* [Voilà](https://voila.readthedocs.io/)
 
 ---
 JupyterHub
 ^^^^^^
-* [JupyterHub](http://jupyterhub.readthedocs.io/en/latest)
-* [configurable HTTP proxy](https://github.com/jupyter/configurable-http-proxy)
-* [dockerspawner](https://github.com/jupyter/dockerspawner)
-* [ldapauthenticator](https://github.com/jupyter/ldapauthenticator)
-* [oauthenticator](https://github.com/jupyter/oauthenticator)
-* [sudospawner](https://github.com/jupyter/sudospawner)
+* [JupyterHub](https://jupyterhub.readthedocs.io/en/latest)
+* [Configurable HTTP proxy](https://github.com/jupyterhub/configurable-http-proxy)
+* Authenticators: [LDAP](https://github.com/jupyterhub/ldapauthenticator), [OAuth](https://oauthenticator.readthedocs.io/en/latest/), [Native](https://native-authenticator.readthedocs.io/en/latest/), [LTI](https://ltiauthenticator.readthedocs.io/en/latest/)
+* Spawners: [sudo](https://github.com/jupyterhub/sudospawner), [Docker](https://jupyterhub-dockerspawner.readthedocs.io/en/latest/), [Kubernetes](https://jupyterhub-kubespawner.readthedocs.io/en/latest/)
+* [Zero to JupyterHub](https://zero-to-jupyterhub.readthedocs.io/en/latest/)
+* [All JupyterHub Projects...](https://github.com/jupyterhub)
 
 ---
-Education
+Working with Notebooks
 ^^^^^^
-* [nbgrader](http://nbgrader.readthedocs.io/en/latest)
-
----
-Execution
-^^^^^^
-* [nbclient](http://nbclient.readthedocs.io/en/latest)
-
----
-Conversion and Formatting
-^^^^^^
-* [nbconvert](http://nbconvert.readthedocs.io/en/latest)
-* [nbformat](http://nbformat.readthedocs.io/en/latest)
+* [nbclient](https://nbclient.readthedocs.io/en/latest/) - execution
+* [nbconvert](https://nbconvert.readthedocs.io/en/latest/) - conversion
+* [nbviewer](https://github.com/jupyter/nbviewer/) - viewing
+* [nbdime](https://nbdime.readthedocs.io/) - comparing and merging
+* [nbgrader](https://nbgrader.readthedocs.io/en/latest/) - grading
+* [nbformat](https://nbformat.readthedocs.io/en/latest/) - modification and validation
 
 ---
 Kernels
 ^^^^^^
-* [IPython](https://ipython.readthedocs.io/en/stable)
+* [IPython](https://ipython.readthedocs.io/en/stable/)
 * [IRkernel](https://irkernel.github.io)
 * [IJulia](https://github.com/JuliaLang/IJulia.jl)
-* [Community maintained kernels](https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages)
+* [Xeus kernels](https://xeus.readthedocs.io/en/latest/)
+* [Community maintained kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 
 ---
 IPython
 ^^^^^^
-* [IPython](http://ipython.readthedocs.io/en/stable)
-* [ipykernel](https://ipython.readthedocs.io/en/stable)
-* [ipyparallel](https://ipyparallel.readthedocs.io/en/latest)
+* [IPython](https://ipython.readthedocs.io/en/stable/)
+* [ipykernel](https://ipython.readthedocs.io/en/stable/)
+* [ipyparallel](https://ipyparallel.readthedocs.io/en/latest/)
+* [traitlets](https://traitlets.readthedocs.io/en/stable/)
 
 ---
-Architecture
+Architecture and Specification
 ^^^^^^
-* [jupyter_client](http://jupyter-client.readthedocs.io/en/latest)
-* [jupyter_core](http://jupyter-core.readthedocs.io/en/latest)
+* [nbformat](https://nbformat.readthedocs.io/en/latest/api.html) - Jupyter Notebook Format
+* [jupyter-client](https://jupyter-client.readthedocs.io/en/latest/) - Jupyter Messaging Protocol
+* [jupyter-core](https://jupyter-core.readthedocs.io/en/latest/)
+* [jupyter-server](https://jupyter-server.readthedocs.io/)
+* [jupyterlab-server](https://jupyterlab-server.readthedocs.io/en/stable/)
 
 ---
 Deployment
 ^^^^^^
-* [docker-stacks](https://github.com/jupyter/docker-stacks)
-* [jupyter-sphinx-theme](https://github.com/jupyter/jupyter-sphinx-theme)
-* [kernel_gateway](http://jupyter-kernel-gateway.readthedocs.io/en/latest)
-* [nbviewer](https://github.com/jupyter/nbviewer)
-* [tmpnb](https://github.com/jupyter/tmpnb)
-* [traitlets](http://traitlets.readthedocs.io/en/stable)
+* [Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
+* [Kernel Gateway](https://jupyter-kernel-gateway.readthedocs.io/en/latest/)
+* [Enterprise Gateway](https://jupyter-enterprise-gateway.readthedocs.io/en/latest/)
 
 ---
-JupyterLab
+Widgets
 ^^^^^^
-* [JupyterLab](https://github.com/jupyterlab/jupyterlab)
-* [ipywidgets](https://ipywidgets.readthedocs.io/en/latest)
+* [ipywidgets](https://ipywidgets.readthedocs.io/)
+* [widget-cookiecutter](https://github.com/jupyter-widgets/widget-cookiecutter/)
+* [All Widget Projects...](https://github.com/jupyter-widgets)
 
 ```
 
 ## Table of Contents
+
+The rest of the documentation in this site covers major use-cases of the Jupyter ecosystem, as well as topics that will help you navigate the various parts of the Jupyter community.
+For more in-depth documentation about a specific tool, we recommend checking out that tool's documentation (see the list above).
 
 (user-docs)=
 
 ```{toctree}
 :maxdepth: 2
 
-content-quickstart
+start/index
 ```
 
 (jupyter-using)=
@@ -171,7 +177,6 @@ contributing/content-contributor
 reference/content-reference
 ```
 
-
 ## Resources
 
 ```{csv-table}
@@ -180,10 +185,10 @@ reference/content-reference
 
 [Jupyter website](https://jupyter.org), Keep up to date on Jupyter
 [IPython website](https://ipython.org), Learn more about IPython
-[jupyter/help repo](https://github.com/jupyter/help), Start here for help and support questions
+[Jupyter Discourse forum](https://discourse.jupyter.org/), Start here for help and support questions
 [Jupyter mailing list](https://groups.google.com/forum/#!forum/jupyter), General discussion of Jupyter's use
 [Jupyter in Education group](https://groups.google.com/forum/#!forum/jupyter-education), Discussion of Jupyter's use in education
-[NumFocus](http://www.numfocus.org), "Promotes world-class, innovative, open source scientific software"
+[NumFocus](https://www.numfocus.org), "Promotes world-class, innovative, open source scientific software"
 [Donate to Project Jupyter](https://numfocus.salsalabs.org/donate-to-jupyter/index.html), Please contribute to open science collaboration and sustainability
 ```
 
