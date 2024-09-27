@@ -14,10 +14,9 @@ These sections describe a few ways to get started with some of the most-commonly
 **Try Jupyter** (https://try.jupyter.org) is a site for trying out the Jupyter Notebook, equipped with kernels for several different languages (Julia, R, C++, Scheme, Ruby) without installing anything.
 Click the link below to go to the page.
 
-```{link-button} https://try.jupyter.org
-:type: url
-:text: Click to Try Jupyter
-:classes: btn-primary
+```{button-link} https://try.jupyter.org
+:color: secondary
+Click to Try Jupyter
 ```
 
 When running the examples on the `Try Jupyter` site, you will get a temporary Jupyter
@@ -49,7 +48,7 @@ The Jupyter Lab interface is a more extensible and composable interactive comput
 
 Here's an example of what the JupyterLab interface looks like:
 
-```{image} https://jupyter.org/assets/labpreview.webp
+```{image} ../_static/_images/jupyterlab.png
 ```
 
 ## Next step: install Jupyter locally

@@ -1,8 +1,8 @@
 # Jupyter
 
-*Read this in other languages: [English](README.md), [Español](README.es-ES.md), [Português](README.pt-BR.md)*
+*Read this in other languages: [English](README.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Français](README.fr-FR.md)*
 
-Jupyter metapackage for installation and docs.
+Jupyter metapackage for installation and documents
 
 ## Documentation structure
 
@@ -13,16 +13,16 @@ It is written in a combination of [reStructuredText](https://docutils.sourceforg
 
 ## Build the documentation locally
 
-There are a few ways to build the documentation, see below for instructions:
+There are a few ways to build the documentation; see below for instructions:
 
-### Build the documentation automaticlaly with `nox`
+### Build the documentation automatically with `nox`
 
-The easiest way to build the documentation locally is by using the [`nox` command line tool](https://nox.thea.codes/). This tool makes it easy to automate commands in a repository, and we have included a `docs` command to quickly install the dependencies and build the the documentation.
+The easiest way to build the documentation locally is by using the [`nox` command line tool](https://nox.thea.codes/). This tool makes it easy to automate commands in a repository, and we have included a `docs` command to quickly install the dependencies and build the documentation.
 
 To build and preview the site locally, follow these steps:
 
 1. **Clone this repository**.
-   
+
    ```console
    $ git clone https://github.com/jupyter/jupyter
    $ cd jupyter
@@ -33,7 +33,7 @@ To build and preview the site locally, follow these steps:
    $ pip install nox
    ```
 3. **Run the `docs` command**
-   
+
    ```console
    $ nox -s docs
    ```
@@ -52,7 +52,7 @@ To start this live server, use the following `nox` command:
 $ nox -s docs-live
 ```
 
-When the build is finished, go to the URL that is displayed. It should show a live preview of your doucmentation.
+When the build is finished, go to the URL that is displayed. It should show a live preview of your documentation.
 
 To stop serving the website, press **`Ctrl`**-`C` in your terminal
 
@@ -65,19 +65,19 @@ First, install [the `miniconda` Python distribution](https://conda.io/miniconda.
 Next, navigate to the `/docs` directory and create a `conda` environment:
 
 ```bash
-conda env create -f environment.yml  
-```  
+conda env create -f environment.yml
+```
 
 Activate the environment:
 
 ```bash
-source activate jupyter_docs  
+source activate jupyter_docs
 ```
 
 **Build the docs** using Sphinx with the following commands:
 
 ```bash
-make clean  
+make clean
 make html
 ```
 
@@ -86,3 +86,22 @@ The docs will be built in `build/html`. They can be viewed by opening `build/htm
 ```bash
 python3 -m http.server
 ```
+
+## Releasing the jupyter metapackage
+
+Anyone with push access to this repo can make a release
+of the Jupyter metapackage (this happens very rarely).
+We use [tbump][] to publish releases.
+
+tbump updates version numbers and publishes the `git tag` of the version.
+[Our GitHub Actions](https://github.com/jupyter/jupyter/actions)
+then build the releases and publish them to PyPI.
+
+The steps involved:
+
+1. Install tbump: `pip install tbump`
+2. Tag and publish the release `tbump $NEW_VERSION`.
+
+That's it!
+
+[tbump]: https://github.com/your-tools/tbump

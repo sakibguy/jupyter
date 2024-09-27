@@ -32,8 +32,9 @@ in the workflow described below. This workflow has a handful of actors and compo
 
 ### The translation process
 
-![Translation CI/CD](static/translation-ci-cd.png "Diagram of the translation continuous integration
-and deployment flow")
+![](static/translation-ci-cd.png)
+
+<!---Alt text is intentionally left blank because the image content is described thoroughly in the surrounding text.--->
 
 1. A user creates or edits reStructuredText (`.rst`) or Markdown (`.md`) documents written in U.S.
    English.
@@ -86,6 +87,7 @@ Note: We recognize this flow assumes documentation starts life written in U.S. E
 look into removing this assumption in the future if it becomes a significant barrier to new
 contributions.
 
+(translator-workflows)=
 ## Community translator workflows
 
 We are delighted when members of the Jupyter community want to help translate documentation. We use
@@ -287,7 +289,7 @@ filters:
 10. Click _Resources_ in the left sidebar.
 11. Click one of the `.po` files to see translation progress by language.
 12. Click one of the languages to see details about translation progress, translate text, and review
-    translations. See the [Translator workflows](#translator-workflows) section above for details.
+    translations. See the [Community translator workflows](#translator-workflows) section above for details.
 
 After confirming the initial English `.po` files have reached Transifex, set up continuous
 integration to ensure source strings are kept up-to-date in Transifex whenever the English
@@ -372,8 +374,7 @@ ReadTheDocs will build both the source documentation site as well as sites for a
 languages. ReadTheDocs will associate the sites with one another and make them accessible via
 language links in a popup.
 
-![ReadTheDocs popup](static/translation-rtd-popup.png "Screenshot of the ReadTheDocs popup that
-allows a user to view documentation in a different language")
+![Project Jupyter documentation site with the ReadTheDocs popup open on the right, showing links to the documentation in other languages.](static/translation-rtd-popup.png)
 
 ## Reference
 

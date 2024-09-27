@@ -10,12 +10,12 @@ provide information about the Jupyter community such as background, events,
 and communication channels. As our community is highly dynamic, information
 may change, and we will do our best to keep it up to date.
 
-.. TODO: remove this hidden toctree when left sidebar TOCs work in pydata sphinx theme
-
 .. toctree::
    :hidden:
 
    community-call-notes/index
+   host-guide
+
 
 Jupyter Community Meetings
 ==========================
@@ -24,6 +24,11 @@ The Jupyter community often meets (usually on-line) in order to discuss matters 
 the Jupyter community, share new ideas and discussions, and connect with one another.
 This often happens within specific sub-project (more information below), though
 there are also occasional community-wide meetings.
+
+Some of these meetings are recorded and uploaded to our `YouTube channel <https://www.youtube.com/@projectjupyter>`_.
+**Please do not record meetings on your own.** Some of our meetings include both
+on-the-record and off-the-record segments; off-record segments are not recorded or
+published.
 
 This following calendar shows the various meetings and events from Jupyter sub-projects:
 
@@ -42,12 +47,6 @@ and are focused around demonstrations and sharing information across all of the 
 - Watch previous calls on `our YouTube channel <https://www.youtube.com/playlist?list=PLUrHeD2K9Cmkoamm4NjLmvXC4Y6E1o8SP>`_.
 - Read the `notes from previous calls <community-call-notes/index.html>`_.
 
-In addition, you can find the notes from previous community meetings below.
-
-.. toctree::
-
-   community-call-notes/index
-
 Jupyter Project meetings
 ------------------------
 
@@ -60,7 +59,7 @@ following pages should help you find the information for each.
 
 
 **JupyterHub meetings** happen monthly. For a calendar of future team meetings, see
-`the JupyterHub team compass repository <https://jupyterhub-team-compass.readthedocs.io/en/latest/meetings.html>`_.
+`the JupyterHub team compass repository <https://jupyterhub-team-compass.readthedocs.io/en/latest/meetings/index.html>`_.
 
 **JupyterLab meetings** happen weekly. For more information about when these meetings happen,
 as well as notes from each meeting, see `the JupyterLab README <https://github.com/jupyterlab/jupyterlab#weekly-dev-meeting>`_.
